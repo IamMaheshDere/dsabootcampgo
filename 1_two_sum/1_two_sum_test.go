@@ -16,7 +16,7 @@ func TestTwoSum(t *testing.T) {
 		want []int
 	}{
 		{
-			"test case 1",
+			"test case 1 ",
 			args{
 				[]int{3, 3},
 				6,
