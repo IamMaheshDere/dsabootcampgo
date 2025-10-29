@@ -3,8 +3,6 @@ package tree
 import (
 	"context"
 	"fmt"
-
-	"github.com/IamMaheshDere/dsabootcampgo/models"
 )
 
 type node struct {
@@ -12,12 +10,17 @@ type node struct {
 	left  *node
 	right *node
 }
-
 type tree struct {
 	root *node
 }
 
-func NewTree() models.Tree {
+type Ops interface {
+	Populate(ctx context.Context)
+	Display(ctx context.Context)
+	PreetyDisplay(ctx context.Context)
+}
+
+func NewTree() Ops {
 	return &tree{}
 }
 

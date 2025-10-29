@@ -7,8 +7,8 @@ import (
 )
 
 func main() {
-	tree := tree.NewTree()
-	tree.Populate(context.Background())
-	tree.Display(context.Background())
-	tree.PreetyDisplay(context.Background())
+	treeOps := tree.NewTree()
+	treeOps.Populate(context.Background())
+	treeOps.Display(context.Background())
+	treeOps.PreetyDisplay(context.Background())
 }
